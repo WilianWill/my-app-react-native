@@ -38,6 +38,8 @@ const style = StyleSheet.create({
     justifyContent: "space-between",
     marginInline: 10,
     paddingInline: 14,
+    shadowColor: "#000",
+    elevation: 2,
   },
 
   balanceContentDisponivel: {

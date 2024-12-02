@@ -53,8 +53,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     backgroundColor: "#fff",
     marginInline: 10,
-    marginBlock: 10,
-    borderRadius: 5,
+    marginBlock: 15,
+    borderRadius: 10,
+    shadowColor: "#000",
+    elevation: 2,
   },
   item: {
     backgroundColor: "#fff",
