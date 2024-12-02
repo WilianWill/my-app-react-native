@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 import Header from "./components/header-component/header";
 import Balance from "./components/balance-component/balance";
 import Feature from "./components/feature-options/feature";
+import Cripto from "./components/cripto-component/cripto";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Header />
       <Balance />
       <Feature />
+      <Cripto />
     </View>
   );
 }
