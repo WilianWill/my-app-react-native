@@ -11,56 +11,60 @@ import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 
 export default function Feature() {
   return (
-    <ScrollView
-      style={styles.container}
-      horizontal
-      showsHorizontalScrollIndicator={false}
-    >
-      <View style={styles.item}>
+    <View style={styles.container}>
+      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
         <TouchableOpacity>
-          <Ionicons name="card" style={styles.icon} />
-          <Text style={styles.title}>Cartão</Text>
+          <View style={styles.item}>
+            <MaterialIcons name="credit-card" style={styles.icon} />
+            <Text style={styles.title}>Cartão</Text>
+          </View>
         </TouchableOpacity>
-      </View>
-      <View style={styles.item}>
         <TouchableOpacity>
-          <MaterialIcons name="attach-money" style={styles.icon} />
-          <Text style={styles.title}>Depositar</Text>
+          <View style={styles.item}>
+            <MaterialIcons name="attach-money" style={styles.icon} />
+            <Text style={styles.title}>Despesas</Text>
+          </View>
         </TouchableOpacity>
-      </View>
-      <View style={styles.item}>
         <TouchableOpacity>
-          <MaterialIcons name="transfer-within-a-station" style={styles.icon} />
-          <Text style={styles.title}>Transferir</Text>
+          <View style={styles.item}>
+            <MaterialIcons name="settings" style={styles.icon} />
+            <Text style={styles.title}>Config</Text>
+          </View>
         </TouchableOpacity>
-      </View>
-
-      <View style={styles.item}>
         <TouchableOpacity>
-          <MaterialIcons name="settings" style={styles.icon} />
-          <Text style={styles.title}>Config</Text>
+          <View style={styles.item}>
+            <MaterialIcons name="settings" style={styles.icon} />
+            <Text style={styles.title}>Teste</Text>
+          </View>
         </TouchableOpacity>
-      </View>
-    </ScrollView>
+        <TouchableOpacity>
+          <View style={styles.item}>
+            <MaterialIcons name="settings" style={styles.icon} />
+            <Text style={styles.title}>Teste</Text>
+          </View>
+        </TouchableOpacity>
+      </ScrollView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    height: 200,
     flexDirection: "row",
     backgroundColor: "#fff",
     marginInline: 10,
     marginBlock: 10,
+    borderRadius: 5,
   },
   item: {
     backgroundColor: "#fff",
     marginInline: 10,
     marginBlock: 10,
-    height: 100,
-    width: 100,
-    justifyContent: "center",
+    minHeight: 60,
+    width: 90,
+    padding: 7,
     alignItems: "center",
+    justifyContent: "center",
   },
   icon: {
     color: "#000",
@@ -70,7 +74,7 @@ const styles = StyleSheet.create({
   },
   title: {
     color: "gray",
-    fontSize: 20,
+    fontSize: 16,
     fontWeight: "bold",
   },
 });
